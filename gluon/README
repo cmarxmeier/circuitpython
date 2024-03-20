@@ -1,1 +1,19 @@
-dummy
+for openwrt based gluon additional kernel modules are needed:
+
+kmod-fs-vfat
+kmod-hid
+kmod-hid-generic
+kmod-input-core
+kmod-input-evdev
+kmod-input-uinput
+kmod-usb-acm
+kmod-usb-core
+kmod-usb-ehci
+kmod-usb-hid
+kmod-usb-ledtrig-usbport
+kmod-usb-storage
+kmod-usb-uhci
+kmod-usb2
+
+package triggerhappy for parsing keyboard inputs
+package minicom for serial REPL terminal to device
