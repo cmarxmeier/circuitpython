@@ -1,1 +1,2 @@
-dummy
+additional libraries for imports are needed according to base firmware in usage
+testet with circuitpython 8.2.10
