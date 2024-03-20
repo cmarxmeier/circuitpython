@@ -42,8 +42,34 @@ switch enabled to '1':
 openwrt# uci set fstab.@mount[0].enabled='1'; uci commit fstab
 
 
-
-
-
 Freifunk Rhein-Sieg provides pre defines repositories for current firmware
-within ssh terminal make use of 'opkg update' followed by 'opkg install <packagename>'
+within ssh terminal make use of 
+openwrt# opkg update
+
+Downloading http://downloads.openwrt.org/snapshots/packages/mips_24kc/base/Packages.gz
+Updated list of available packages in /var/opkg-lists/openwrt_base
+Downloading http://downloads.openwrt.org/snapshots/packages/mips_24kc/base/Packages.sig
+Signature check passed.
+Downloading http://downloads.openwrt.org/snapshots/packages/mips_24kc/luci/Packages.gz
+Updated list of available packages in /var/opkg-lists/openwrt_luci
+Downloading http://downloads.openwrt.org/snapshots/packages/mips_24kc/luci/Packages.sig
+Signature check passed.
+Downloading http://downloads.openwrt.org/snapshots/packages/mips_24kc/packages/Packages.gz
+Updated list of available packages in /var/opkg-lists/openwrt_packages
+Downloading http://downloads.openwrt.org/snapshots/packages/mips_24kc/packages/Packages.sig
+Signature check passed.
+Downloading http://downloads.openwrt.org/snapshots/packages/mips_24kc/routing/Packages.gz
+Updated list of available packages in /var/opkg-lists/openwrt_routing
+Downloading http://downloads.openwrt.org/snapshots/packages/mips_24kc/routing/Packages.sig
+Signature check passed.
+Downloading http://downloads.openwrt.org/snapshots/packages/mips_24kc/telephony/Packages.gz
+Updated list of available packages in /var/opkg-lists/openwrt_telephony
+Downloading http://downloads.openwrt.org/snapshots/packages/mips_24kc/telephony/Packages.sig
+Signature check passed.
+Downloading http://images.freifunk-rhein-sieg.net/lohmar/packages/gluon-lo-lo-stable-3.9.0/ath79/generic/Packages.gz
+Updated list of available packages in /var/opkg-lists/gluon
+Downloading http://images.freifunk-rhein-sieg.net/lohmar/packages/gluon-lo-lo-stable-3.9.0/ath79/generic/Packages.sig
+Signature check passed.
+
+
+followed by 'opkg install <packagename>'
