@@ -17,8 +17,11 @@ kmod-usb-storage
 kmod-usb-uhci
 kmod-usb2
 
+package blkid
 package triggerhappy for parsing keyboard inputs
 package minicom for serial REPL terminal to device
+
+you should set automount of circuitpython usb vfat in uci:
 
 Freifunk Rhein-Sieg provides pre defines repositories for current firmware
 within ssh terminal make use of 'opkg update' followed by 'opkg install <packagename>'
