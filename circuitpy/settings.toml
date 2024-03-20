@@ -1,0 +1,43 @@
+# Comments are supported
+CIRCUITPY_WIFI_SSID = "Freifunk"
+CIRCUITPY_WIFI_PASSWORD = ""
+CIRCUITPY_WEB_API_PORT = 80
+CIRCUITPY_WEB_API_PASSWORD = "passw0rd"
+#
+# USB.HID
+#
+# toggle switch for activation of USB.HID
+usbhid = 0
+#
+# myOS:
+#
+# 0=openwrt [tested on stable-3.9.0 gluon Freifunk Firmware from RSK with openwrt base]
+# 1=Linux Desktop [testet on Mint 21.3]
+# 2=Windows Desktop [tested on 10/11]
+# 3=MacOS Desktop [tested on Sonoma 14.4]
+# 4=generic keyboard/mouse test
+#
+# Desktop Systems: runs out-of-the-box and opens/closes new Terminal Window on host and sends echo commands to it as proof of concept.
+#
+#         openwrt: has no default screen, so keyboard is not attached to a terminal and /dev/input/eventX has no effect on any console
+#                  needs kernel modules for usb.vfat, usb.hid, usb.cdc etc. and triggerhappy package for keyboard-parsing
+#                  optional uci vfat automount setting to make it work
+#                  minicom package is helpful
+#                  keep a look on flash space available on router - should provide 8MB as minimum like 1043ndV2 does
+#                  preparation: create a file named 'sensors' in directory /etc/config with the following content:
+#                  config circuitpython
+#		                option disabled '0'
+#		                option cputemp '0'
+#		                option voltage '0'
+#		                option charging '0'
+#
+#         generic: Just send Text and move mouse and don't care which App receives the input
+#                  So better open a textpad and keep mouse focus on it before acticvating USB.HID by means of BLE-colourpicker
+
+
+#
+# BMP280 Sensor connected?
+#
+
+bmp280Sensor = 1
+myOS = 0
