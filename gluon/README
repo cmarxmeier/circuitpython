@@ -1,3 +1,5 @@
+openwrt router needs USB-Port and a minimum of 8MB Flash to get it working
+
 for openwrt based gluon additional kernel modules are needed:
 
 kmod-fs-vfat
