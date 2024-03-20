@@ -1,0 +1,21 @@
+config circuitpython
+	option CPU 'Particle Xenon with nRF52840'
+	option disabled '0'
+	option charging '0'
+	option cputemp '27.25'
+	option voltage '2.96'
+
+config bmp280
+	option temperature '23.8'
+	option pressure '1010.6'
+
+config bme280
+	option temperature '0'
+        option pressure    '0'
+        option humidity    '0'
+
+config bme680
+        option temperature '0'
+        option pressure    '0'
+        option humidity    '0'
+        option airquality '0'
