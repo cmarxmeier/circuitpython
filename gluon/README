@@ -17,3 +17,6 @@ kmod-usb2
 
 package triggerhappy for parsing keyboard inputs
 package minicom for serial REPL terminal to device
+
+Freifunk Rhein-Sieg provides pre defines repositories for current firmware
+within ssh terminal make use of 'opkg update' followed by 'opkg install <packagename>'
