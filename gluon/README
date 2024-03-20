@@ -13,15 +13,37 @@ kmod-usb-core
 kmod-usb-ehci
 kmod-usb-hid
 kmod-usb-ledtrig-usbport
+kmod-usb-serial
 kmod-usb-storage
 kmod-usb-uhci
 kmod-usb2
 
-package blkid
+package blkid, libusb
 package triggerhappy for parsing keyboard inputs
 package minicom for serial REPL terminal to device
 
 you should set automount of circuitpython usb vfat in uci:
+openwrt# block detect >/etc/config/fstab
+results in: 
+openwrt# uci show fstab:
+fstab.@global[0]=global
+fstab.@global[0].anon_swap='0'
+fstab.@global[0].anon_mount='0'
+fstab.@global[0].auto_swap='1'
+fstab.@global[0].auto_mount='1'
+fstab.@global[0].delay_root='5'
+fstab.@global[0].check_fs='0'
+fstab.@mount[0]=mount
+fstab.@mount[0].target='/mnt/sda1'
+fstab.@mount[0].uuid='2821-0001'
+fstab.@mount[0].enabled='0'
+
+switch enabled to '1':
+openwrt# uci set fstab.@mount[0].enabled='1'; uci commit fstab
+
+
+
+
 
 Freifunk Rhein-Sieg provides pre defines repositories for current firmware
 within ssh terminal make use of 'opkg update' followed by 'opkg install <packagename>'
