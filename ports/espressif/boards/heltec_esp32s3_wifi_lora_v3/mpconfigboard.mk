@@ -26,4 +26,5 @@ CIRCUITPY_DISPLAYIO = 1
 
 FROZEN_MPY_DIRS += $(TOP)/frozen/Adafruit_CircuitPython_Display_Shapes
 FROZEN_MPY_DIRS += $(TOP)/frozen/Adafruit_CircuitPython_Display_Text
+FROZEN_MPY_DIRS += $(TOP)/frozen/Circuitpython-SX126X
 # FROZEN_MPY_DIRS += $(TOP)/frozen/Adafruit_CircuitPython_RFM9x  # makes no sense - heltec v3 uses sx1262 Lora-Chipset
